@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     gap: 30px;
 
-    justify-content: center;
+    @media screen and (max-width: 480px) {
+            justify-content: center;
+        }
     
 }
 
@@ -21,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 210px;
+    width: 210px;
     height: 92px;
     border: 1px solid $client-color;
     border-radius: 4px;
