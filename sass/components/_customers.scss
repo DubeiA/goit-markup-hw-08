@@ -1,16 +1,27 @@
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: center;
+    
 }
 
-.customers__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .customers__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .customers__item { 
+    
+//     width: 210px;
+         
+// }
 
 .customers__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    min-width: 210px;
     height: 92px;
     border: 1px solid $client-color;
     border-radius: 4px;
@@ -23,6 +34,19 @@
         &:focus {
             color: $hover-color;
             border-color: $hover-color;
+        }
+
+    @media screen and (min-width: 480px){
+        width: 210px;
+    
+    } 
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
         }
 
 }
