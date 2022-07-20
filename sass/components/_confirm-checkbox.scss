@@ -51,13 +51,29 @@
 .confirm__text {
     margin-left: 8px;
 
-    line-height: 1.71;
+    // line-height: 1.71;
 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    
     color: $main-secondary-color;
 
+    @media screen and (min-width:1200px) { 
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .confirm__link {
     color: rgba(33, 150, 243, 1);
     margin-left: 3px;
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        }
 }
