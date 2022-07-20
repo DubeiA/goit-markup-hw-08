@@ -145,12 +145,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
-
 .nav {
   display: none;
 }
@@ -360,9 +354,6 @@ img {
 }
 
 .modal-btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,14 +1040,9 @@ img {
 .subscription__input:focus {
   border-color: #2196f3;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .subscription__input {
     width: 100%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .subscription__input {
-    width: 75%;
   }
 }
 
@@ -1261,4 +1247,155 @@ img {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.burger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+.burger-btn:hover {
+  fill: #2196f3;
+}
+
+.burger-mobil {
+  z-index: 2;
+  padding: 8px;
+}
+
+.burger-btn .icon-close {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-btn.is-open .icon-close {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.burger-btn .icon-burger {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-btn.is-open .icon-burger {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 48px 0 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-list-nav {
+  margin-bottom: auto;
+}
+
+.mobile-item-nav:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-link-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.active {
+  color: #2196f3;
+}
+
+.mobile-item-contact:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-list-contact {
+  margin-bottom: 64px;
+}
+
+.mobile-link-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-list-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.mobile-item-networks:not(:last-child) .mobile-link-networks {
+  padding-right: 10px;
+  border-right: 1px solid #757575;
+}
+
+.mobile-link-networks {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
