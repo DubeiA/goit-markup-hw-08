@@ -1272,6 +1272,7 @@ img {
 .overlay {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .overlay__text {
@@ -1328,8 +1329,8 @@ img {
 }
 
 .burger-btn .icon-close {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1337,13 +1338,13 @@ img {
 }
 
 .burger-btn.is-open .icon-close {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .burger-btn .icon-burger {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1351,8 +1352,8 @@ img {
 }
 
 .burger-btn.is-open .icon-burger {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 .mobile-menu {

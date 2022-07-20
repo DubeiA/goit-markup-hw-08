@@ -31,23 +31,23 @@
 }
 
 .burger-btn .icon-close { 
-    transform: translateY(100%);  
+    transform: translateX(200%);  
     transition: transform $animation-cubic; 
 }
 
 .burger-btn.is-open .icon-close {
-    transform: translateY(0);
+    transform: translateX(0);
     
 }
 
 .burger-btn .icon-burger {
-    transform: translateY(0);
+    transform: translateX(0);
     transition: transform $animation-cubic;
 
 }
 
 .burger-btn.is-open .icon-burger { 
-    transform: translateY(100%);
+    transform: translateX(200%);
     
 }
 
