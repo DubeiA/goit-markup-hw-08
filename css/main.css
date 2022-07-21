@@ -316,6 +316,7 @@ img {
   }
 }
 .hero .hero__title {
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #ffffff;
@@ -327,7 +328,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     /* or 136% */
@@ -1209,7 +1210,7 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -1218,10 +1219,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.portfolio-nav__item + .portfolio-nav__item {
-  margin-left: 8px;
 }
 
 .portfolio-nav__btn {
