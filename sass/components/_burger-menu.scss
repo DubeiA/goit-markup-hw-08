@@ -31,6 +31,7 @@
 }
 
 .burger-btn .icon-close { 
+    
     transform: translateX(200%);  
     transition: transform $animation-cubic; 
 }
@@ -41,16 +42,20 @@
 }
 
 .burger-btn .icon-burger {
+    
     transform: translateX(0);
     transition: transform $animation-cubic;
+    
 
 }
 
 .burger-btn.is-open .icon-burger { 
+    
     transform: translateX(200%);
+
+   
     
 }
-
 
 // MENU
 

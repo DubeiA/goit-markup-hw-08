@@ -25,8 +25,8 @@
 
     display: block;
 
-    width: 16px;
-    height: 15px;
+    min-width: 16px;
+    min-height: 15px;
     border: 2px solid $main-color;
 
     border-radius: 3px;
