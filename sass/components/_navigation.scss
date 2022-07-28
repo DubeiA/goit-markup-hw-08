@@ -41,6 +41,8 @@
 
     color: $hover-color;
 
+    z-index: -1;
+
      &:after {
          content: "";
          position: absolute;

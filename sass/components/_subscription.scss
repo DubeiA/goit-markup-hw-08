@@ -86,6 +86,7 @@
     font-family: inherit;
     cursor: pointer;
 
+    z-index: 0;
 
     transition: background-color $animation-cubic, box-shadow $animation-cubic;
 
